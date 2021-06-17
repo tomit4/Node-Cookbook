@@ -8,6 +8,7 @@
 These files are documenting the following of the tutorials covered in the Node Cookbook.  Throughout these files you will find a series of tutorials and their solutions, ranging from setting up a basic HTML server with raw JavaScript in NodeJS, to setting up an ExpressJS Server, explorations into the basics of APIs such as KoaJS and HappiJS, testing and security modules, along with many other tutorials.
 ####Installation:
 In order to follow along with many of these tutorials, you will obviously need to download the most recent version of NodeJS and the Node Package Manager from either the official websites (*please note that the Node Package Manager comes preinstalled with NodeJS if downloaded from their official website*):
+<br>
 
 [Install NodeJS on Windows or Mac](https://nodejs.org/en/download/)
 
