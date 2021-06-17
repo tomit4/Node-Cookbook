@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title> Express </title>
+    </head>
+    <body>
+        <h1> Express </h1>
+        <p> Welcome to Express </p>
+        <% if (user) { %> <!-- If our express=session has a user, then we greet them-->
+        <p> Hello <%= user.name %>! </p>
+        <p> <a href=/auth/login> Logout </a> </p> <!-- And a simple Logout link is presented -->
+        <% } else { %> <!-- Otherwise if no user input is detected -->
+        <p> <a href=/auth/login> Login </a> </p> <!-- Link them back to our Login / page -->
+        <% } %> 
+    </body>
+</html>

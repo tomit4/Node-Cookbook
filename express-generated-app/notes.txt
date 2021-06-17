@@ -1,0 +1,22 @@
+npx express-generator --view=ejs express-generated-app
+
+# creates an express skeleton/template
+# note that the --view can also be replaced by whichever middleware you wish to use, do not leave blank as it defaults to a deprecated
+package called jade
+
+examples include:
+
+--view=hbs (handlebars)
+--view=pug (pug)
+
+# you can also specify which css engine you'd like with the --css argument
+
+examples:
+
+--css=sass
+
+After you have input the above command cd into express-generated-app folder and enter the following commands to retrieve the necessary depenencies:
+
+npm init --yes
+npm install
+npm start

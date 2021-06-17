@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Express - Login</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <% if (fail) { %> <!-- Note that in our auth.js file we have a res.render ("/login", {fail: true}) section -->
+            <h2> Login Failed.</h2> <!-- which will render this header if we failed to enter the proper login credentials -->
+        <% } %> 
+        <form method="post" action="login"> <!-- Otherwise we render this form which is utilized for POST methods -->
+            Username: <input type="text" name="username" />
+            Password: <input type="password" name="password" />
+            <input type="submit" value="Login" />
+        </form>
+    </body>
+</html>
