@@ -18,7 +18,7 @@ Or if you're using a Linux distribution, you may prefer to download NodeJS from 
 
 <h5>Arch Linux:</h5>
 <br>
-```sudo pacman -S nodejs```
+<span style="background:color: #FFFF00">sudo pacman -S nodejs</mark>
 ```sudo pacman -S npm```
 
 Depending on your particular distribution, you may need to look up further documentation on how to install NodeJS and the Node Package Manager.
