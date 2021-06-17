@@ -11,11 +11,13 @@ In order to follow along with many of these tutorials, you will obviously need t
 
 Or if you're using a Linux distribution, you may prefer to download NodeJS from your distribution's repositories:
 
-<h5>Debian/Ubuntu Linux:<h5>   
+<h5>Debian/Ubuntu Linux:<h5>
+<br>
 ```sudo apt install nodejs```
 ```sudo apt install npm```
 
 <h5>Arch Linux:</h5>
+<br>
 ```sudo pacman -S nodejs```
 ```sudo pacman -S npm```
 
@@ -23,6 +25,7 @@ Depending on your particular distribution, you may need to look up further docum
 
 <h4>Installing Dependencies:</h4>
 Many of the directories within this repository already come with a package.json file which includes a list of all the packages necessary to run and test the application.  Once you have navigated to the directory you wish to test, simply input into your terminal:
+<br>
 
 ```npm install```
 
