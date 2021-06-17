@@ -1,0 +1,33 @@
+<h1>Communicating with WebSockets</h1>
+
+<input id="msg" /><button id="send">Send</button> <!-- Creates an input field called msg, and places a Send button as well. -->
+<div id="output"></div> <!-- A blank area where output can be displayed. -->
+
+<script>
+    const ws = new WebSocket("ws://localhost:3000"); // Note the lack of importing any modules here,
+    // that's because it is referencing the server.js file on port 3000
+    const output = document.getElementById("output"); // Grab the output <div> above
+    const send = document.getElementById("send"); // And the send <button>
+
+    send.addEventListener("click", () => { // when the user clicks the send button
+        const msg = document.getElementById("msg").value; // we grab whatever was left in the <input> msg.
+        ws.send(msg); // and we send it over the websocket
+        output.innerHTML += log("Sent", msg); // sending the user a sent message into the output <div> using the log function created below.
+    });
+
+    function log (event, msg) { // a logging function that takes a string as its events parameter, and the passed message from the user.
+        return "<p>" + event + ": " + msg + "</p>"; // notice the output of html here, it creates a paragraph to be placed in the output <div>
+    }
+
+    ws.onmessage = function(e) { // when the websocket server successfully receives a message
+        output.innerHTML += log("Received", e.data); // it uses the log function to display "Received" followed by the passed data.
+    };
+
+    ws.onclose = function(e) { // when the websocket connection closes...
+        output.innerHTML += log("Disconnected", e.code); // use the log function to display "Disconnected" followed by the passed code...
+    };
+
+    ws.onerror = function(e) { //  if the websocket returns an error..
+        output.innerHTML += log("Error", e.data); // display it to the user once again using the log function above.
+    };
+</script>
