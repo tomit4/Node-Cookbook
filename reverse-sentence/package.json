@@ -1,0 +1,24 @@
+{
+  "name": "tomit4-reverse-sentence",
+  "version": "1.0.0",
+  "description": "Reverses the words of a sentence.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/prettier/bin-prettier.js . --write",
+    "prepublish": "npm run lint $$ npm run test"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomit4/reverse-sentence-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomit4/reverse-sentence-/issues"
+  },
+  "homepage": "https://github.com/tomit4/reverse-sentence-#readme"
+}
