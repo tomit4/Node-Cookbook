@@ -30,9 +30,11 @@ Depending on your particular distribution, you may need to look up further docum
 <h4>Installing Dependencies:</h4>
 Many of the directories within this repository already come with a package.json file which includes a list of all the packages necessary to run and test the application.  Once you have navigated to the directory you wish to test, simply input into your terminal:
 <br>
+<br>
 
 ```npm install```
 
+<br>
 This will automatically install all dependencies necessary to run and test the application.
 <font size="3">
 <br>
